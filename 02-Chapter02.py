@@ -8,3 +8,4 @@ img = cv.resize(img, (800, 600))
 cv.imshow('First Image', img)
 
 cv.waitKey(0)
+cv.destroyAllWindows()

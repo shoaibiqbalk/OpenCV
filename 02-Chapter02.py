@@ -1,4 +1,4 @@
-## Reading an Image and Displaying it
+## Reading an Image, Resizing and Displaying it
 
 # library import
 import cv2 as cv

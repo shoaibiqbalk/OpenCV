@@ -1,4 +1,4 @@
-# Mirroring Video Multiple time
+# Drawing Shapes and Text
 
 import cv2 as cv
 import numpy as np
@@ -13,8 +13,9 @@ while True:
     width = int(cap.get(3))
     height = int(cap.get(4))
 
+    img = cv.line(frame, (0, 0), (width, height), (255, 0, 0), 10)
 
-    cv.imshow('Frame', frame)
+    cv.imshow('Frame', img)
 
     if cv.waitKey(2) == ord('q'):
         break

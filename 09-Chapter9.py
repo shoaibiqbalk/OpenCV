@@ -2,6 +2,8 @@
 
 import cv2 as cv
 import numpy as np
+from cv2 import cvtColor
+
 
 cap = cv.VideoCapture(0)
 

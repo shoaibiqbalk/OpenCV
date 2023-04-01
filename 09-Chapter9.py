@@ -7,7 +7,6 @@ cap = cv.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
-    cv.imshow('Frame', frame)
 
     width = int(cap.get(3))
     height = int(cap.get(4))
@@ -18,6 +17,8 @@ while True:
     image[height//2:, :width//2] = smaller_frame
     image[:height//2, width//2:] = smaller_frame
     image[height//2:, width//2:] = smaller_frame
+
+    cv.imshow('Frame', image)
 
     if cv.waitKey(2) == ord('q'):
         break

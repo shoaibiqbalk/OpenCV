@@ -13,7 +13,8 @@ while True:
     width = int(cap.get(3))
     height = int(cap.get(4))
 
-    img = cv.line(frame, (0, 0), (width, height), (255, 0, 0), 10)
+    img = cv.line(frame, (0, 0), (width, height), (255, 0, 0), 10) # Drawing line
+    img = cv.rectangle(frame, (100, 100), (200, 200), (200, 0, 0), 5) # Drawing Rectangle
 
     cv.imshow('Frame', img)
 

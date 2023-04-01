@@ -7,10 +7,12 @@ from cv2 import imwrite
 
 img = cv.imread('resources/image-1.jpg')
 img = cv.resize(img, (800, 600))
+cv.imshow('Image', img)
 
 gray_img =  cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray Image', gray_img)
 imwrite('resources/image_gray.png', gray_img)
+
 
 cv.waitKey(0)
 cv.destroyAllWindows()

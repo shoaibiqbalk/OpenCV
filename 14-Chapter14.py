@@ -1,4 +1,4 @@
-# Face & Eye Detection + Tracking
+## Face & Eye Detection + Tracking
 
 import cv2 as cv
 import numpy as np
@@ -21,7 +21,8 @@ while True:
         roi_color = frame[y:y+h, x:x+w]
         
         eyes = eye_cascade.detectMultiScale(roi_gray, 1.3, 5) 
-
+        for (ex, ey, ew, eh) in eyes:
+            cv.rectangle(roi_color, (ex,ey), (ex+ew, ey+eh), (0, 255, 0), 5)
 
     cv.imshow('Frame', frame)
 

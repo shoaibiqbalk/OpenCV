@@ -1,4 +1,4 @@
-# Cam Image
+# Cam Video
 
 import cv2 as cv
 

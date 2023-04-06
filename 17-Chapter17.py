@@ -8,7 +8,7 @@ vid = cv.VideoCapture('resources/video.mp4')
 frame_width = int(vid.get(3))
 frame_height = int(vid.get(4))
 
-out = cv.VideoWriter("resources/out_video.avi", cv.VideoWriter_fourcc('M', 'j', 'P', 'G'), 10, (frame_width, frame_height), isColor =  False) 
+out = cv.VideoWriter("resources/out_video.avi", cv.VideoWriter_fourcc('M', 'j', 'P', 'G'), 30, (frame_width, frame_height), isColor =  False) 
 
 while True:
     ret, frame = vid.read()

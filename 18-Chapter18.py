@@ -8,7 +8,7 @@ vid = cv.VideoCapture(0)
 frame_width = int(vid.get(3))
 frame_height = int(vid.get(4))
 
-out = cv.VideoWriter("resources/cam_video.avi", cv.VideoWriter_fourcc('M', 'j', 'P', 'G'), 10, (frame_width, frame_height)) 
+out = cv.VideoWriter("resources/cam_video.avi", cv.VideoWriter_fourcc('M', 'j', 'P', 'G'), 30, (frame_width, frame_height)) 
 
 while True:
     ret, frame = vid.read()

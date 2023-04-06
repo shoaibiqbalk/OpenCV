@@ -1,19 +1,16 @@
-## Reading a video
+## Converting video to grayscale or black & white
 
 import cv2 as cv
 
 vid = cv.VideoCapture('resources/video.mp4')
 
-# Indicator
-if vid.isOpened() == False:
-    print("Error in reading video")
-
-# Reading and playing
-
-while vid.isOpened():
+while True:
     ret, frame = vid.read()
+    gray_frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+
     if ret == True:
-        cv.imshow("Video", frame)
+        cv.imshow("Video", gray_frame)
+        # to quite with 'q'
         if cv.waitKey(2) & 0xFF == ord('q'):
             break
     else:

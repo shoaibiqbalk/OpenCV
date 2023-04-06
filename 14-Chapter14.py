@@ -3,7 +3,7 @@
 import cv2 as cv
 import numpy as np
 
-cap = cv.VideoCapture(0)
+cap = cv.VideoCapture("resources/video.mp4")
 
 # pre-trained classifier models 
 face_cascade = cv.CascadeClassifier(cv.data.haarcascades + "haarcascade_frontalface_default.xml")

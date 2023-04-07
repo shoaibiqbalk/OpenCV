@@ -4,6 +4,10 @@ import cv2 as cv
 import numpy as np
 
 cam = cv.VideoCapture(0)
+cam.set(10, 50) # 10 is the key to set brightness
+cam.set(3, 640) # 3 is the key to width
+cam.set(4, 640) # 4 is the key to height
+
 
 while True:
     ret, frame = cam.read()

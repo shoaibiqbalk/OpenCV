@@ -1,6 +1,5 @@
-# Copying & Pasting Parts of the image
+## Copying & Pasting Parts of the image
 
-## Image manipulation using pixels
 
 import cv2 as cv
 import random

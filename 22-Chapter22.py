@@ -9,7 +9,7 @@ frameNr = 0
 while True:
     success, frame = vid.read()
     if success:
-        cv.imwrite(f"resource/frame/frame_{frameNr}.jpg", frame)
+        cv.imwrite(f"resources/frames/frame_{frameNr}.jpg", frame)
     else:
         break
 

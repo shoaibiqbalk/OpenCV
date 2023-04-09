@@ -17,7 +17,12 @@ def find_coord(event, x, y, flags, params):
 
 # Function to read and display
 if __name__ == "__main__":
-    img = cv.imread
+    img = cv.imread('resources/image-1.jpg', 1)
+    cv.imshow("Image", img)
+    # set call back function
+    cv.setMouseCallback("Image", find_coord)
+    cv.waitKey(0)
+    cv.destroyAllWindows 
 
 
 

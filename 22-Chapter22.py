@@ -3,7 +3,6 @@
 import cv2 as cv
 
 vid = cv.VideoCapture("resources/video.mp4")
-
 frameNr = 0
 
 while True:
